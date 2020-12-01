@@ -10,8 +10,11 @@ public class Main {
 
     public static void main(String[] args) {
         int[] entries = parseEntries("./res/input_p1.txt");
-        var result = Puzzle1.getProduct(entries);
-        System.out.println(result);
+        var result1 = Puzzle1.getTwoProduct(entries, 2020);
+        System.out.println("Puzzle 1: " + result1);
+
+        var result2 = Puzzle1.getThreeProduct(entries, 2020);
+        System.out.println("Puzzle 2: " + result2);
     }
 
     public static int[] parseEntries(String filename) {

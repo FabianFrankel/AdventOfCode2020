@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dae0d0c0-b445-4eed-9c76-a61b599557c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/puzzles.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/puzzles/Puzzle1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/puzzles/com/base/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/puzzles/com/base/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/puzzles/com/puzzles/Puzzle1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/puzzles/com/puzzles/Puzzle1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/base/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/base/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/puzzles/Puzzle1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/puzzles/Puzzle1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +35,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -121,7 +114,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606815794615</updated>
       <workItem from="1606815797456" duration="943000" />
-      <workItem from="1606827622512" duration="2712000" />
+      <workItem from="1606827622512" duration="4599000" />
     </task>
     <servers />
   </component>
@@ -129,42 +122,46 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="167" key="GridCell.Tab.0.bottom" timestamp="1606830331005">
+    <state width="1238" height="167" key="GridCell.Tab.0.bottom" timestamp="1606831984230">
       <screen x="0" y="23" width="1280" height="686" />
     </state>
     <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.23.1280.683@0.23.1280.683" timestamp="1606818633485" />
-    <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.23.1280.686@0.23.1280.686" timestamp="1606830331005" />
-    <state width="1238" height="167" key="GridCell.Tab.0.center" timestamp="1606830330999">
+    <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.23.1280.686@0.23.1280.686" timestamp="1606831984230" />
+    <state width="1238" height="167" key="GridCell.Tab.0.center" timestamp="1606831984225">
       <screen x="0" y="23" width="1280" height="686" />
     </state>
     <state width="1238" height="167" key="GridCell.Tab.0.center/0.23.1280.683@0.23.1280.683" timestamp="1606818633484" />
-    <state width="1238" height="167" key="GridCell.Tab.0.center/0.23.1280.686@0.23.1280.686" timestamp="1606830330999" />
-    <state width="1238" height="167" key="GridCell.Tab.0.left" timestamp="1606830330998">
+    <state width="1238" height="167" key="GridCell.Tab.0.center/0.23.1280.686@0.23.1280.686" timestamp="1606831984225" />
+    <state width="1238" height="167" key="GridCell.Tab.0.left" timestamp="1606831984223">
       <screen x="0" y="23" width="1280" height="686" />
     </state>
     <state width="1238" height="167" key="GridCell.Tab.0.left/0.23.1280.683@0.23.1280.683" timestamp="1606818633484" />
-    <state width="1238" height="167" key="GridCell.Tab.0.left/0.23.1280.686@0.23.1280.686" timestamp="1606830330998" />
-    <state width="1238" height="167" key="GridCell.Tab.0.right" timestamp="1606830331005">
+    <state width="1238" height="167" key="GridCell.Tab.0.left/0.23.1280.686@0.23.1280.686" timestamp="1606831984223" />
+    <state width="1238" height="167" key="GridCell.Tab.0.right" timestamp="1606831984226">
       <screen x="0" y="23" width="1280" height="686" />
     </state>
     <state width="1238" height="167" key="GridCell.Tab.0.right/0.23.1280.683@0.23.1280.683" timestamp="1606818633485" />
-    <state width="1238" height="167" key="GridCell.Tab.0.right/0.23.1280.686@0.23.1280.686" timestamp="1606830331005" />
-    <state width="1238" height="208" key="GridCell.Tab.1.bottom" timestamp="1606830318767">
+    <state width="1238" height="167" key="GridCell.Tab.0.right/0.23.1280.686@0.23.1280.686" timestamp="1606831984226" />
+    <state width="1238" height="208" key="GridCell.Tab.1.bottom" timestamp="1606831902143">
       <screen x="0" y="23" width="1280" height="686" />
     </state>
-    <state width="1238" height="208" key="GridCell.Tab.1.bottom/0.23.1280.686@0.23.1280.686" timestamp="1606830318767" />
-    <state width="1238" height="208" key="GridCell.Tab.1.center" timestamp="1606830318766">
+    <state width="1238" height="208" key="GridCell.Tab.1.bottom/0.23.1280.686@0.23.1280.686" timestamp="1606831902143" />
+    <state width="1238" height="208" key="GridCell.Tab.1.center" timestamp="1606831902142">
       <screen x="0" y="23" width="1280" height="686" />
     </state>
-    <state width="1238" height="208" key="GridCell.Tab.1.center/0.23.1280.686@0.23.1280.686" timestamp="1606830318766" />
-    <state width="1238" height="208" key="GridCell.Tab.1.left" timestamp="1606830318765">
+    <state width="1238" height="208" key="GridCell.Tab.1.center/0.23.1280.686@0.23.1280.686" timestamp="1606831902141" />
+    <state width="1238" height="208" key="GridCell.Tab.1.left" timestamp="1606831902141">
       <screen x="0" y="23" width="1280" height="686" />
     </state>
-    <state width="1238" height="208" key="GridCell.Tab.1.left/0.23.1280.686@0.23.1280.686" timestamp="1606830318765" />
-    <state width="1238" height="208" key="GridCell.Tab.1.right" timestamp="1606830318766">
+    <state width="1238" height="208" key="GridCell.Tab.1.left/0.23.1280.686@0.23.1280.686" timestamp="1606831902141" />
+    <state width="1238" height="208" key="GridCell.Tab.1.right" timestamp="1606831902142">
       <screen x="0" y="23" width="1280" height="686" />
     </state>
-    <state width="1238" height="208" key="GridCell.Tab.1.right/0.23.1280.686@0.23.1280.686" timestamp="1606830318766" />
+    <state width="1238" height="208" key="GridCell.Tab.1.right/0.23.1280.686@0.23.1280.686" timestamp="1606831902142" />
+    <state x="378" y="111" key="extract.method.dialog" timestamp="1606830591987">
+      <screen x="0" y="23" width="1280" height="686" />
+    </state>
+    <state x="378" y="111" key="extract.method.dialog/0.23.1280.686@0.23.1280.686" timestamp="1606830591987" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1606830211641">
       <screen x="0" y="23" width="1280" height="686" />
     </state>
