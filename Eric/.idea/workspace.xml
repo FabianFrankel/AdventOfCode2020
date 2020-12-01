@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dae0d0c0-b445-4eed-9c76-a61b599557c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/puzzles.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/puzzles/Puzzle1.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1l3BFhhtfcLjsURuCNDw0oySDqh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.base.Main" />
+      <module name="puzzles" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dae0d0c0-b445-4eed-9c76-a61b599557c0" name="Default Changelist" comment="" />
+      <created>1606815794615</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606815794615</updated>
+      <workItem from="1606815797456" duration="943000" />
+      <workItem from="1606827622512" duration="2712000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1238" height="167" key="GridCell.Tab.0.bottom" timestamp="1606830331005">
+      <screen x="0" y="23" width="1280" height="686" />
+    </state>
+    <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.23.1280.683@0.23.1280.683" timestamp="1606818633485" />
+    <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.23.1280.686@0.23.1280.686" timestamp="1606830331005" />
+    <state width="1238" height="167" key="GridCell.Tab.0.center" timestamp="1606830330999">
+      <screen x="0" y="23" width="1280" height="686" />
+    </state>
+    <state width="1238" height="167" key="GridCell.Tab.0.center/0.23.1280.683@0.23.1280.683" timestamp="1606818633484" />
+    <state width="1238" height="167" key="GridCell.Tab.0.center/0.23.1280.686@0.23.1280.686" timestamp="1606830330999" />
+    <state width="1238" height="167" key="GridCell.Tab.0.left" timestamp="1606830330998">
+      <screen x="0" y="23" width="1280" height="686" />
+    </state>
+    <state width="1238" height="167" key="GridCell.Tab.0.left/0.23.1280.683@0.23.1280.683" timestamp="1606818633484" />
+    <state width="1238" height="167" key="GridCell.Tab.0.left/0.23.1280.686@0.23.1280.686" timestamp="1606830330998" />
+    <state width="1238" height="167" key="GridCell.Tab.0.right" timestamp="1606830331005">
+      <screen x="0" y="23" width="1280" height="686" />
+    </state>
+    <state width="1238" height="167" key="GridCell.Tab.0.right/0.23.1280.683@0.23.1280.683" timestamp="1606818633485" />
+    <state width="1238" height="167" key="GridCell.Tab.0.right/0.23.1280.686@0.23.1280.686" timestamp="1606830331005" />
+    <state width="1238" height="208" key="GridCell.Tab.1.bottom" timestamp="1606830318767">
+      <screen x="0" y="23" width="1280" height="686" />
+    </state>
+    <state width="1238" height="208" key="GridCell.Tab.1.bottom/0.23.1280.686@0.23.1280.686" timestamp="1606830318767" />
+    <state width="1238" height="208" key="GridCell.Tab.1.center" timestamp="1606830318766">
+      <screen x="0" y="23" width="1280" height="686" />
+    </state>
+    <state width="1238" height="208" key="GridCell.Tab.1.center/0.23.1280.686@0.23.1280.686" timestamp="1606830318766" />
+    <state width="1238" height="208" key="GridCell.Tab.1.left" timestamp="1606830318765">
+      <screen x="0" y="23" width="1280" height="686" />
+    </state>
+    <state width="1238" height="208" key="GridCell.Tab.1.left/0.23.1280.686@0.23.1280.686" timestamp="1606830318765" />
+    <state width="1238" height="208" key="GridCell.Tab.1.right" timestamp="1606830318766">
+      <screen x="0" y="23" width="1280" height="686" />
+    </state>
+    <state width="1238" height="208" key="GridCell.Tab.1.right/0.23.1280.686@0.23.1280.686" timestamp="1606830318766" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1606830211641">
+      <screen x="0" y="23" width="1280" height="686" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.23.1280.686@0.23.1280.686" timestamp="1606830211641" />
+  </component>
+</project>
