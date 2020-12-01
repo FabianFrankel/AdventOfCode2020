@@ -201,10 +201,18 @@ var input = [
   1715,
 ];
 
-for (var i = 0; i < input.length; i++) {
-  for (var j = i; j < input.length; j++) {
-    if (input[i] + input[j] == 2020) {
-      console.log(input[i] * input[j]);
+function getNumber(number, e) {
+  for (var i = 0; i < input.length; i++) {
+    for (var j = i; j < input.length; j++) {
+      if ((input[i] + input[j] == number) & (input[j] != e) & (input[i] != e)) {
+        return input[i] * input[j];
+      }
     }
   }
+  return null;
+}
+
+for (var i = 0; i < input.length; i++) {
+  var temp = getNumber(2020 - input[i], input[i]);
+  if (temp) console.log(temp * input[i]);
 }
