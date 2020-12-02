@@ -35,11 +35,12 @@ class Day2:
                     break
             if letter_count <= data['Max'] and letter_count >= data['Min']:
                 valid_counter += 1
-                #print(valid_counter, letter_count, data['Max'], data['Min'])
 
         return valid_counter
 
     def password_checker_part2(self):
+        '''Checks if one and only one of the letters on the specified positions are 
+            same as the specified letter in the password'''
         valid_counter = 0
         
         for data in self.data_dict.values():
@@ -47,7 +48,6 @@ class Day2:
                 (data['Password'][data['Max'] - 1] is data['Letter'])):
                 valid_counter += 1
         return valid_counter
-
 
 
 if __name__ == '__main__':
