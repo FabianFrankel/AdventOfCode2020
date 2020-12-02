@@ -1,6 +1,6 @@
 package com.base;
 
-import com.puzzles.Puzzle1;
+import com.puzzles.Puzzle2;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -9,19 +9,26 @@ import java.nio.file.Paths;
 public class Main {
 
     public static void main(String[] args) {
-        int[] entries = parseEntries("./res/input_p1.txt");
-        var result1 = Puzzle1.getTwoProduct(entries, 2020);
-        System.out.println("Puzzle 1: " + result1);
+        var result1 = Puzzle2.doSomething(Puzzle2.parseInput(readAllLines("./res/input_p2.txt")));
+        System.out.println("Puzzle 2.1: " + result1);
+    }
 
-        var result2 = Puzzle1.getThreeProduct(entries, 2020);
-        System.out.println("Puzzle 2: " + result2);
+    public static String[] readAllLines(String filename) {
+        try {
+            return Files
+                    .readAllLines(Paths.get(filename))
+                    .toArray(String[]::new);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public static int[] parseEntries(String filename) {
         try {
             return Files.readAllLines(Paths.get(filename))
                     .stream()
-                    .mapToInt(num -> Integer.parseInt(num))
+                    .mapToInt(Integer::parseInt)
                     .toArray();
         } catch (IOException e) {
             e.printStackTrace();
