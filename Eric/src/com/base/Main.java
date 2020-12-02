@@ -9,8 +9,11 @@ import java.nio.file.Paths;
 public class Main {
 
     public static void main(String[] args) {
-        var result1 = Puzzle2.getNumberOfValidPasswords(Puzzle2.parseInput(readAllLines("input_p2")));
+        var result1 = Puzzle2.getNumberOfValidPasswords1(Puzzle2.parseInput(readAllLines("input_p2")));
         System.out.println("Puzzle 2.1: " + result1);
+
+        var result2 = Puzzle2.getNumberOfValidPasswords2(Puzzle2.parseInput(readAllLines("input_p2")));
+        System.out.println("Puzzle 2.2: " + result2);
     }
 
     public static String[] readAllLines(String filename) {

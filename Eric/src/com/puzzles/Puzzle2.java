@@ -11,17 +11,29 @@ public class Puzzle2 {
                 .toArray(Password[]::new);
     }
 
-    public static int getNumberOfValidPasswords(Password[] passwords) {
+    public static int getNumberOfValidPasswords1(Password[] passwords) {
         return Arrays
                 .stream(passwords)
-                .filter(Puzzle2::isValidPassword)
+                .filter(Puzzle2::hasValidOccurrences)
                 .toArray()
                 .length;
     }
 
-    private static boolean isValidPassword(Password pass) {
+    public static int getNumberOfValidPasswords2(Password[] passwords) {
+        return Arrays
+                .stream(passwords)
+                .filter(Puzzle2::hasValidPositions)
+                .toArray()
+                .length;
+    }
+
+    private static boolean hasValidOccurrences(Password pass) {
         int charOcc = getCharOccurrences(pass.password(), pass.rule().ch());
         return (charOcc >= pass.rule().min() && charOcc <= pass.rule().max());
+    }
+
+    private static boolean hasValidPositions(Password pass) {
+        return pass.password().charAt(pass.rule().min() - 1) == pass.rule().ch() ^ pass.password().charAt(pass.rule().max() - 1) == pass.rule().ch();
     }
 
     private static int getCharOccurrences(String input, char ch) {
