@@ -28,13 +28,20 @@ class password_solver:
             return False
 
     def policy_two(self, pwd):
-        return 0
+        first_index = int(pwd.split('-')[0])
+        second_index = int(pwd.split('-')[1].split(' ')[0])
+        letter_constrained = pwd.split(':')[0][-1]
+        first_bool = pwd.split(':')[1][first_index] == letter_constrained 
+        second_bool = pwd.split(':')[1][second_index] == letter_constrained
+        return (first_bool or second_bool) and not (first_bool and second_bool)
 
     def _policy_one(self, pwd):
         lower_constraint = int(pwd.split('-')[0])
         upper_constraint = int(pwd.split('-')[1].split(' ')[0])
         letter_constrained = pwd.split(':')[0][-1]
-        return pwd.split(':')[1].count(letter_constrained) <= upper_constraint and pwd.split(':')[1].count(letter_constrained) >= lower_constraint    
+        lower_constraint_bool = pwd.split(':')[1].count(letter_constrained) >= lower_constraint  
+        upper_constraint_bool = pwd.split(':')[1].count(letter_constrained) <= upper_constraint
+        return lower_constraint_bool and upper_constraint_bool   
 
 if __name__ == '__main__':
     input_array = []
@@ -42,5 +49,6 @@ if __name__ == '__main__':
         for line in my_file:
             input_array.append(line)
     pwd_solver = password_solver(input_array)
+    print(len(pwd_solver.get_allowed_passwords('2')))
     
     
