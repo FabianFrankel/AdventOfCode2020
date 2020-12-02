@@ -31,7 +31,7 @@ class Day2:
             for letter in data['Password']:
                 if letter == data['Letter']:
                     letter_count += 1
-                elif letter_count > data['Max']:
+                if letter_count > data['Max']:
                     break
             if letter_count <= data['Max'] and letter_count >= data['Min']:
                 valid_counter += 1
@@ -55,3 +55,4 @@ if __name__ == '__main__':
     puzzle = Day2('input2.txt')
     res1 = puzzle.password_checker_part1()
     res2 = puzzle.password_checker_part2()
+    print(res1)
