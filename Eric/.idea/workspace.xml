@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dae0d0c0-b445-4eed-9c76-a61b599557c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/puzzles/Puzzle2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/puzzles/com/base/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/puzzles/com/base/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/puzzles/com/puzzles/Puzzle1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/puzzles/com/puzzles/Puzzle1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/base/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/base/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/puzzles/Puzzle2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/puzzles/Puzzle2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +112,7 @@
       <updated>1606815794615</updated>
       <workItem from="1606815797456" duration="943000" />
       <workItem from="1606827622512" duration="5198000" />
-      <workItem from="1606895180402" duration="3187000" />
+      <workItem from="1606895180402" duration="4188000" />
     </task>
     <servers />
   </component>
@@ -126,29 +124,29 @@
       <screen x="0" y="23" width="1280" height="686" />
     </state>
     <state x="364" y="197" key="#Notifications/0.23.1280.686@0.23.1280.686" timestamp="1606895255008" />
-    <state width="1238" height="167" key="GridCell.Tab.0.bottom" timestamp="1606898350988">
+    <state width="1238" height="167" key="GridCell.Tab.0.bottom" timestamp="1606898631801">
       <screen x="0" y="23" width="1280" height="686" />
     </state>
     <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.23.1280.683@0.23.1280.683" timestamp="1606818633485" />
-    <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.23.1280.686@0.23.1280.686" timestamp="1606898350988" />
+    <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.23.1280.686@0.23.1280.686" timestamp="1606898631801" />
     <state width="1238" height="208" key="GridCell.Tab.0.bottom/0.23.1280.694@0.23.1280.694" timestamp="1606894812499" />
-    <state width="1238" height="167" key="GridCell.Tab.0.center" timestamp="1606898350987">
+    <state width="1238" height="167" key="GridCell.Tab.0.center" timestamp="1606898631798">
       <screen x="0" y="23" width="1280" height="686" />
     </state>
     <state width="1238" height="167" key="GridCell.Tab.0.center/0.23.1280.683@0.23.1280.683" timestamp="1606818633484" />
-    <state width="1238" height="167" key="GridCell.Tab.0.center/0.23.1280.686@0.23.1280.686" timestamp="1606898350987" />
+    <state width="1238" height="167" key="GridCell.Tab.0.center/0.23.1280.686@0.23.1280.686" timestamp="1606898631798" />
     <state width="1238" height="208" key="GridCell.Tab.0.center/0.23.1280.694@0.23.1280.694" timestamp="1606894812497" />
-    <state width="1238" height="167" key="GridCell.Tab.0.left" timestamp="1606898350987">
+    <state width="1238" height="167" key="GridCell.Tab.0.left" timestamp="1606898631793">
       <screen x="0" y="23" width="1280" height="686" />
     </state>
     <state width="1238" height="167" key="GridCell.Tab.0.left/0.23.1280.683@0.23.1280.683" timestamp="1606818633484" />
-    <state width="1238" height="167" key="GridCell.Tab.0.left/0.23.1280.686@0.23.1280.686" timestamp="1606898350987" />
+    <state width="1238" height="167" key="GridCell.Tab.0.left/0.23.1280.686@0.23.1280.686" timestamp="1606898631793" />
     <state width="1238" height="208" key="GridCell.Tab.0.left/0.23.1280.694@0.23.1280.694" timestamp="1606894812496" />
-    <state width="1238" height="167" key="GridCell.Tab.0.right" timestamp="1606898350988">
+    <state width="1238" height="167" key="GridCell.Tab.0.right" timestamp="1606898631800">
       <screen x="0" y="23" width="1280" height="686" />
     </state>
     <state width="1238" height="167" key="GridCell.Tab.0.right/0.23.1280.683@0.23.1280.683" timestamp="1606818633485" />
-    <state width="1238" height="167" key="GridCell.Tab.0.right/0.23.1280.686@0.23.1280.686" timestamp="1606898350988" />
+    <state width="1238" height="167" key="GridCell.Tab.0.right/0.23.1280.686@0.23.1280.686" timestamp="1606898631800" />
     <state width="1238" height="208" key="GridCell.Tab.0.right/0.23.1280.694@0.23.1280.694" timestamp="1606894812498" />
     <state width="1238" height="208" key="GridCell.Tab.1.bottom" timestamp="1606898312335">
       <screen x="0" y="23" width="1280" height="686" />
@@ -178,16 +176,5 @@
       <screen x="0" y="23" width="1280" height="686" />
     </state>
     <state width="600" height="428" key="javadoc.popup/0.23.1280.686@0.23.1280.686" timestamp="1606896249327" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/puzzles/Puzzle2.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

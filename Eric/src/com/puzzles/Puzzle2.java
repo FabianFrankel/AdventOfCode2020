@@ -11,7 +11,7 @@ public class Puzzle2 {
                 .toArray(Password[]::new);
     }
 
-    public static int doSomething(Password[] passwords) {
+    public static int getNumberOfValidPasswords(Password[] passwords) {
         return Arrays
                 .stream(passwords)
                 .filter(Puzzle2::isValidPassword)
