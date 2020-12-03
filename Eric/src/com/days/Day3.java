@@ -40,14 +40,11 @@ public class Day3 {
     }
 
     private int getTreeCountOnTraversal(int yDiff, int xDiff) {
-        int y = 0, x = 0, trees = 0;
-
-        while (y < plane.length) {
+        int trees = 0;
+        
+        for (int y = 0, x = 0; y < plane.length; y += yDiff, x += xDiff)
             if (plane[y][x % plane[0].length] == '#') trees++;
 
-            y += yDiff;
-            x += xDiff;
-        }
         return trees;
     }
 }
