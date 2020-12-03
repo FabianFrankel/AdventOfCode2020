@@ -3,8 +3,13 @@ package com.days;
 import java.util.Arrays;
 
 public class Day3 {
+    private char[][] plane;
 
-    public static char[][] parseInput(String[] plane) {
+    public Day3(String plane[]) {
+        this.plane = parseInput(plane);
+    }
+
+    private char[][] parseInput(String[] plane) {
         int rows = plane.length, cols = plane[0].length();
         var arr = new char[rows][cols];
 
@@ -16,17 +21,17 @@ public class Day3 {
         return arr;
     }
 
-    public static int FindTrees1(char[][] plane) {
-        return getTreeCountOnTraversal(plane, 1, 3);
+    public int findTrees1() {
+        return getTreeCountOnTraversal(1, 3);
     }
 
-    public static int FindTrees2(char[][] plane) {
+    public int findTrees2() {
         var strategies = new int[]{
-                getTreeCountOnTraversal(plane, 1, 1),
-                getTreeCountOnTraversal(plane, 1, 3),
-                getTreeCountOnTraversal(plane, 1, 5),
-                getTreeCountOnTraversal(plane, 1, 7),
-                getTreeCountOnTraversal(plane, 2, 1)
+                getTreeCountOnTraversal(1, 1),
+                getTreeCountOnTraversal(1, 3),
+                getTreeCountOnTraversal(1, 5),
+                getTreeCountOnTraversal(1, 7),
+                getTreeCountOnTraversal(2, 1)
         };
 
         return Arrays
@@ -34,7 +39,7 @@ public class Day3 {
                 .reduce(1, (a, b) -> a * b);
     }
 
-    private static int getTreeCountOnTraversal(char[][] plane, int yDiff, int xDiff) {
+    private int getTreeCountOnTraversal(int yDiff, int xDiff) {
         int y = 0, x = 0, trees = 0;
 
         while (y < plane.length) {

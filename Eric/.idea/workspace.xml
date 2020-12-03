@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dae0d0c0-b445-4eed-9c76-a61b599557c0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/base/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/base/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/days/Day3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/days/Day3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,17 +60,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -114,7 +104,8 @@
       <workItem from="1606895180402" duration="4980000" />
       <workItem from="1606981337202" duration="121000" />
       <workItem from="1606981560969" duration="150000" />
-      <workItem from="1606981846185" duration="3370000" />
+      <workItem from="1606981846185" duration="3465000" />
+      <workItem from="1606989649662" duration="418000" />
     </task>
     <servers />
   </component>

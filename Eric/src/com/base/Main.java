@@ -9,10 +9,11 @@ import java.nio.file.Paths;
 public class Main {
 
     public static void main(String[] args) {
-        var answer1 = Day3.FindTrees1(Day3.parseInput(readAllLines("input_p3")));
+        Day3 day3 = new Day3(readAllLines("input_p3"));
+        var answer1 = day3.findTrees1();
         System.out.println("Puzzle1: " + answer1);
 
-        var answer2 = Day3.FindTrees2(Day3.parseInput(readAllLines("input_p3")));
+        var answer2 = day3.findTrees2();
         System.out.println("Puzzle2: " + answer2);
     }
 
