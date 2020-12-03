@@ -1,20 +1,20 @@
-package com.puzzles;
+package com.days;
 
 import java.util.Arrays;
 
-public class Puzzle2 {
+public class Day2 {
 
     public static Password[] parseInput(String[] input) {
         return Arrays
                 .stream(input)
-                .map(Puzzle2::parsePassword)
+                .map(Day2::parsePassword)
                 .toArray(Password[]::new);
     }
 
     public static int getNumberOfValidPasswords1(Password[] passwords) {
         return Arrays
                 .stream(passwords)
-                .filter(Puzzle2::hasValidOccurrences)
+                .filter(Day2::hasValidOccurrences)
                 .toArray()
                 .length;
     }
@@ -22,7 +22,7 @@ public class Puzzle2 {
     public static int getNumberOfValidPasswords2(Password[] passwords) {
         return Arrays
                 .stream(passwords)
-                .filter(Puzzle2::hasValidPositions)
+                .filter(Day2::hasValidPositions)
                 .toArray()
                 .length;
     }

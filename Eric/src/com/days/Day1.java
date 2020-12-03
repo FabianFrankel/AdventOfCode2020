@@ -1,9 +1,9 @@
-package com.puzzles;
+package com.days;
 
 import java.util.Arrays;
 import java.util.HashSet;
 
-public class Puzzle1 {
+public class Day1 {
     public static int getTwoProduct(int[] entries, int target) {
         Arrays.sort(entries);
 

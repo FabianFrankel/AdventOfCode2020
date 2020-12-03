@@ -1,6 +1,6 @@
 package com.base;
 
-import com.puzzles.Puzzle2;
+import com.days.Day3;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -9,11 +9,11 @@ import java.nio.file.Paths;
 public class Main {
 
     public static void main(String[] args) {
-        var result1 = Puzzle2.getNumberOfValidPasswords1(Puzzle2.parseInput(readAllLines("input_p2")));
-        System.out.println("Puzzle 2.1: " + result1);
+        var answer1 = Day3.FindTrees1(Day3.parseInput(readAllLines("input_p3")));
+        System.out.println("Puzzle1: " + answer1);
 
-        var result2 = Puzzle2.getNumberOfValidPasswords2(Puzzle2.parseInput(readAllLines("input_p2")));
-        System.out.println("Puzzle 2.2: " + result2);
+        var answer2 = Day3.FindTrees2(Day3.parseInput(readAllLines("input_p3")));
+        System.out.println("Puzzle2: " + answer2);
     }
 
     public static String[] readAllLines(String filename) {
