@@ -26,9 +26,12 @@ public class Day3 {
                 getTreeCountOnTraversal(plane, 1, 3),
                 getTreeCountOnTraversal(plane, 1, 5),
                 getTreeCountOnTraversal(plane, 1, 7),
-                getTreeCountOnTraversal(plane, 2, 1)};
+                getTreeCountOnTraversal(plane, 2, 1)
+        };
 
-        return Arrays.stream(strategies).reduce(1, (a, b) -> a * b);
+        return Arrays
+                .stream(strategies)
+                .reduce(1, (a, b) -> a * b);
     }
 
     private static int getTreeCountOnTraversal(char[][] plane, int yDiff, int xDiff) {

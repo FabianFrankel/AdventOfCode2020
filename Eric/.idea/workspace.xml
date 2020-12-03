@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dae0d0c0-b445-4eed-9c76-a61b599557c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/days/Day1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/days/Day3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/base/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/base/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/puzzles/Puzzle1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/puzzles/Puzzle2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/days/Day2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/days/Day3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/days/Day3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +114,7 @@
       <workItem from="1606895180402" duration="4980000" />
       <workItem from="1606981337202" duration="121000" />
       <workItem from="1606981560969" duration="150000" />
-      <workItem from="1606981846185" duration="3304000" />
+      <workItem from="1606981846185" duration="3370000" />
     </task>
     <servers />
   </component>
