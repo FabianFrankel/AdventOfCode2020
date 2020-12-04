@@ -51,9 +51,8 @@ public class Day4 {
     }
 
     private boolean isValidEntry(String key, String val, String record) {
-        var tmp = record.substring(record.indexOf(key) + key.length() + 1);
-        var isolatedEntry = tmp.indexOf(' ') != -1 ? tmp.substring(0, tmp.indexOf(' ')) : tmp;
-        return isolatedEntry.matches(val);
+        var entry = record.substring(record.indexOf(key) + key.length() + 1).split(" ")[0];
+        return entry.matches(val);
     }
 }
 
