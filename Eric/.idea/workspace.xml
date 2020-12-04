@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dae0d0c0-b445-4eed-9c76-a61b599557c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/res/input_p4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/days/Day4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/days/Day3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/days/Day3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/puzzles/com/base/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/puzzles/com/base/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/base/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/base/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,11 +27,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1l3BFhhtfcLjsURuCNDw0oySDqh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -104,11 +111,23 @@
       <workItem from="1606981337202" duration="121000" />
       <workItem from="1606981560969" duration="150000" />
       <workItem from="1606981846185" duration="3465000" />
-      <workItem from="1606989649662" duration="1448000" />
+      <workItem from="1606989649662" duration="2060000" />
+      <workItem from="1607068448857" duration="5141000" />
+      <workItem from="1607073685264" duration="5801000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="record" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
