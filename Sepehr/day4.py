@@ -26,14 +26,11 @@ class Day4:
         for i, string in enumerate(pass_string.split(' ')[:-1]):
             key_values = string.split(':')
             res_dict[key_values[0]] = key_values[1]
-        # Detta funkar tydligen ikke
-        #res_dict['valid'] = ('byr' , 'iyr' , 'eyr' , 'hgt' , 'hcl' , 'ecl' , 'pid') in res_dict
         res_dict['valid'] = self._valid_checker(res_dict)
 
         return res_dict
 
     def _valid_checker(self, pass_dict):
-
 
         # Not needed, but will cancel checks before if not all fields exist
         if not self._valid_fields(pass_dict): return False
