@@ -1,6 +1,6 @@
 package com.base;
 
-import com.days.Day5;
+import com.days.Day6;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -9,9 +9,9 @@ import java.nio.file.Paths;
 public class Main {
 
     public static void main(String[] args) {
-        Day5 day5 = new Day5(readAllLines("input_p5"));
-        System.out.println("Day5 puzzle1: " + day5.getMaxId());
-        System.out.println("Day5 puzzle2: " + day5.getMissingSeat());
+        Day6 day6 = new Day6(readAllLines("input_p6"));
+        System.out.println("Day6 Puzzle1: " + day6.countForAnyone());
+        System.out.println("Day6 Puzzle2: " + day6.countForEveryone());
     }
 
     public static String[] readAllLines(String filename) {

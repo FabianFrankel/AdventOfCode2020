@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dae0d0c0-b445-4eed-9c76-a61b599557c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/res/input_p5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/days/Day5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/input_p6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/days/Day6.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/puzzles/com/base/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/puzzles/com/base/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/puzzles/com/days/Day4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/puzzles/com/days/Day4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/res/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/base/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/base/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,13 +66,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -129,7 +129,8 @@
       <workItem from="1607073685264" duration="6373000" />
       <workItem from="1607082959895" duration="193000" />
       <workItem from="1607085755791" duration="248000" />
-      <workItem from="1607161841706" duration="8684000" />
+      <workItem from="1607161841706" duration="10255000" />
+      <workItem from="1607249720920" duration="4267000" />
     </task>
     <servers />
   </component>
@@ -138,12 +139,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="record" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>
