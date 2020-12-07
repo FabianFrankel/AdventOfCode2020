@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dae0d0c0-b445-4eed-9c76-a61b599557c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/days/Day7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/res/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/base/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/base/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/days/Day7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/days/Day7.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,17 +63,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -128,7 +115,8 @@
       <workItem from="1607085755791" duration="248000" />
       <workItem from="1607161841706" duration="10255000" />
       <workItem from="1607249720920" duration="5333000" />
-      <workItem from="1607330384854" duration="11413000" />
+      <workItem from="1607330384854" duration="11748000" />
+      <workItem from="1607361435266" duration="351000" />
     </task>
     <servers />
   </component>

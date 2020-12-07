@@ -41,26 +41,28 @@ public class Day7 {
     }
 
     public int puzzle1(String[] targetBags) {
-        var foundBags = ruleMap.entrySet().stream()
-                .filter(x -> x.getValue().stream() // uniquely filters bags that resides within the any element in targetBags
-                        .anyMatch(y -> Arrays.stream(targetBags)
-                                .anyMatch(z -> y.bag().equals(z)))
-                        && Arrays.stream(targetBags).noneMatch(k -> k.contains(x.getKey())))
-                .map(Map.Entry::getKey)
-                .toArray(String[]::new);
+        var bags = Stream.concat(Arrays.stream(getBagsInsideTargetBags(targetBags)), Arrays.stream(targetBags)).toArray(String[]::new); // concats targetBags with foundBags
 
-        var concArr = Stream.concat(Arrays.stream(foundBags), Arrays.stream(targetBags)).toArray(String[]::new); // concats targetBags with foundBags
+        if (targetBags.length != bags.length) // if we've found more bags than the targetBags, keep recursing
+            return puzzle1(bags);
 
-        if (targetBags.length != concArr.length) // if we've found more bags than the targetBags, keep recursing
-            return puzzle1(concArr);
-
-        return concArr.length - 1; // return l-1 to exclude the original targetBag (shiny gold)
+        return bags.length - 1; // return l-1 to exclude the original targetBag (shiny gold)
     }
 
     public int puzzle2(String bag) {
         return ruleMap.get(bag).stream()
-                .map(x -> x.quantity() + x.quantity() * puzzle2(x.bag()))
+                .map(x -> x.quantity() + x.quantity() * puzzle2(x.color()))
                 .reduce(0, Integer::sum);
+    }
+
+    private String[] getBagsInsideTargetBags(String[] targetBags) {
+        return ruleMap.entrySet().stream()
+                .filter(entry -> entry.getValue().stream() // uniquely filters bags that resides within any element in targetBags
+                        .anyMatch(val -> Arrays.stream(targetBags)
+                                .anyMatch(target -> val.color().equals(target)))
+                        && Arrays.stream(targetBags).noneMatch(k -> k.contains(entry.getKey()))) // avoid duplicate bags
+                .map(Map.Entry::getKey)
+                .toArray(String[]::new);
     }
 
     private String trimDeLaTrim(String input) {
@@ -69,10 +71,10 @@ public class Day7 {
 
     private void addIfAbsent(List<BagRule> list, List<BagRule> elements) {
         for (var e : elements)
-            if (list.stream().map(BagRule::bag).anyMatch(x -> x.contains(e.bag())))
+            if (list.stream().map(BagRule::color).anyMatch(x -> x.contains(e.color())))
                 list.add(e);
     }
 }
 
-record BagRule(int quantity, String bag) {
+record BagRule(int quantity, String color) {
 }
