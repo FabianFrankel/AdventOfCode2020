@@ -18,7 +18,7 @@ class bag_rec:
             temp_bag = i[0][:-2]
             inner_bags = {}
             for j in i[1]:
-                if( j[1] > 1):
+                if( int(j[1]) > 1):
                     inner_bags.update({j[3:][:-1] : j[1]})
                 else:
                     inner_bags.update({j[3:] : j[1]})
@@ -32,7 +32,7 @@ class bag_rec:
     def can_bag_carry_bag(self, outerbag, inner_bag):
 
         bag_rules = self.get_bag_rules(outerbag)
-        print(bag_rules)
+        #print(bag_rules)
         resulting_dict = {}
         if not bag_rules:
             return False
@@ -53,9 +53,9 @@ class bag_rec:
 
     def number_of_outer_bags_for_bag(self, bag):
         nbr_outer_bags = 0
-        print(self.rules)
+        #print(self.rules)
         for i in self.rules:
-            print(i[0], bag)
+            #print(i[0], bag)
             if self.can_bag_carry_bag(i[0], bag):
                 nbr_outer_bags = nbr_outer_bags +1
         return nbr_outer_bags
@@ -67,7 +67,7 @@ class bag_rec:
 
 def get_input_array():
     input_array = []
-    with open('input_test.txt') as my_file:
+    with open('input.txt') as my_file:
         for line in my_file:
             line = line.replace('\n','').replace('.', '')
             input_array.append(line)
@@ -80,5 +80,5 @@ if __name__ == '__main__':
     input_array = get_input_array()
     bag_rec = bag_rec(input_array)
     print(bag_rec.number_of_outer_bags_for_bag('shiny gold bag'))
-    ##bag_rec.print_rules()
+    
     
