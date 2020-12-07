@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dae0d0c0-b445-4eed-9c76-a61b599557c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/res/input_p6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/days/Day6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/days/Day7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/res/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/base/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/base/Main.java" afterDir="false" />
@@ -66,15 +65,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -130,7 +127,8 @@
       <workItem from="1607082959895" duration="193000" />
       <workItem from="1607085755791" duration="248000" />
       <workItem from="1607161841706" duration="10255000" />
-      <workItem from="1607249720920" duration="4267000" />
+      <workItem from="1607249720920" duration="5333000" />
+      <workItem from="1607330384854" duration="11413000" />
     </task>
     <servers />
   </component>
@@ -139,5 +137,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="deepest" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
