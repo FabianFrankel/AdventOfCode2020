@@ -12,6 +12,9 @@ class bag_rec:
                 self.rules.append([i.split('contain')[0], i.split('contain')[1].split(',')])
         self._clean_input()
 
+
+
+    ## Just cleaning input removing s and making rules a dict instead of array
     def _clean_input(self):
         new_rules = []
         for i in self.rules:
@@ -32,29 +35,32 @@ class bag_rec:
     def can_bag_carry_bag(self, outerbag, inner_bag):
 
         bag_rules = self.get_bag_rules(outerbag)
-        #print(bag_rules)
-        resulting_dict = {}
+        resulting_dict = {}             #A dict with every childbag as key and if it can carry inner bag the value is true
         if not bag_rules:
-            return False
+            return False                #No rules means we cant carry return false
         for i in bag_rules.keys():
             if(inner_bag == i):
-                resulting_dict.update({i: True})
+                resulting_dict.update({i: True})        #If childbag exists then we can carry
             else:
-                resulting_dict.update({i: self.can_bag_carry_bag(i, inner_bag)})
-        if(True in resulting_dict.values()):
+                resulting_dict.update({i: self.can_bag_carry_bag(i, inner_bag)})    #check recursively if we can a child of this bag can carry our bag
+        if(True in resulting_dict.values()):    #if any of our childs can carry our bag then this one can indirectly
             return True
-        return False
+        return False        #This should not compile
 
+
+    ## Returns the child bags ie rules
     def get_bag_rules(self, bag):
         for i in self.rules:
             if bag == i[0]:
                 return i[1]
         return {}
 
+    
+    ## Check if a bag can carry our bag for every bag in list
     def number_of_outer_bags_for_bag(self, bag):
         nbr_outer_bags = 0
         #print(self.rules)
-        for i in self.rules:
+        for i in self.rules:   
             #print(i[0], bag)
             if self.can_bag_carry_bag(i[0], bag):
                 nbr_outer_bags = nbr_outer_bags +1
