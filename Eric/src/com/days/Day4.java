@@ -54,8 +54,10 @@ public class Day4 {
         var entry = record.substring(record.indexOf(key) + key.length() + 1).split(" ")[0];
         return entry.matches(val);
     }
+
+    private interface IValidator {
+        boolean validate(String record);
+    }
 }
 
-interface IValidator {
-    boolean validate(String record);
-}
+

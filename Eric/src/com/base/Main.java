@@ -1,6 +1,6 @@
 package com.base;
 
-import com.days.Day7;
+import com.days.Day8;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -9,9 +9,9 @@ import java.nio.file.Paths;
 public class Main {
 
     public static void main(String[] args) {
-        Day7 day7 = new Day7(readAllLines("input_p7"));
-        System.out.println(day7.puzzle1(new String[]{"shiny gold"}));
-        System.out.println(day7.puzzle2("shiny gold"));
+        Day8 day8 = new Day8(readAllLines("input_p8"));
+        System.out.println("Day8 puzzle1:" + day8.getAccumulatorAtFail());
+        System.out.println("Day8 puzzle2:" + day8.fixAndGetAccumulatorAtSuccess());
     }
 
     public static String[] readAllLines(String filename) {

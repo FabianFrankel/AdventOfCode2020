@@ -44,10 +44,12 @@ public class Day2 {
         var rule = new Rule(Integer.parseInt(x.substring(0, x.indexOf('-'))), Integer.parseInt(x.substring(x.indexOf('-') + 1, x.indexOf(' '))), x.charAt(x.indexOf(' ') + 1));
         return new Password(rule, x.substring(x.lastIndexOf(": ") + 2));
     }
+
+    private record Rule(int min, int max, char ch) {
+    }
+
+    private record Password(Rule rule, String password) {
+    }
 }
 
-record Rule(int min, int max, char ch) {
-}
 
-record Password(Rule rule, String password) {
-}

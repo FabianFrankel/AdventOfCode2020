@@ -74,7 +74,8 @@ public class Day7 {
             if (list.stream().map(BagRule::color).anyMatch(x -> x.contains(e.color())))
                 list.add(e);
     }
+
+    private record BagRule(int quantity, String color) {
+    }
 }
 
-record BagRule(int quantity, String color) {
-}

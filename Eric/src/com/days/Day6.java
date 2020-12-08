@@ -48,8 +48,10 @@ public class Day6 {
 
         return matches;
     }
+
+    private interface ICounter {
+        int count(String input);
+    }
 }
 
-interface ICounter {
-    int count(String input);
-}
+
