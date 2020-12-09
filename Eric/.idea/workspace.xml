@@ -2,15 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dae0d0c0-b445-4eed-9c76-a61b599557c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/res/input_p8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/days/Day8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/input_p9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/base/Parser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/days/Day9.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/puzzles/com/base/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/puzzles/com/base/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/puzzles/com/days/BagRule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/puzzles/com/days/Day2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/puzzles/com/days/Day2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/puzzles/com/days/Day4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/puzzles/com/days/Day4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/puzzles/com/days/Day6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/puzzles/com/days/Day6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/puzzles/com/days/Day7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/puzzles/com/days/Day7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/puzzles/com/days/ICounter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/puzzles/com/days/IValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/puzzles/com/days/Password.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/puzzles/com/days/Rule.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/res/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/res/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/base/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/base/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/days/Day2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/days/Day2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/days/Day4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/days/Day4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/days/Day6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/days/Day6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/days/Day7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/days/Day7.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,15 +77,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,7 +141,8 @@
       <workItem from="1607161841706" duration="10255000" />
       <workItem from="1607249720920" duration="5333000" />
       <workItem from="1607330384854" duration="11748000" />
-      <workItem from="1607361435266" duration="8538000" />
+      <workItem from="1607361435266" duration="8589000" />
+      <workItem from="1607522850819" duration="3171000" />
     </task>
     <servers />
   </component>

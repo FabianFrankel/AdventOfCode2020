@@ -1,39 +1,13 @@
 package com.base;
 
-import com.days.Day8;
-
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import com.days.Day9;
 
 public class Main {
 
     public static void main(String[] args) {
-        Day8 day8 = new Day8(readAllLines("input_p8"));
-        System.out.println("Day8 puzzle1:" + day8.getAccumulatorAtFail());
-        System.out.println("Day8 puzzle2:" + day8.fixAndGetAccumulatorAtSuccess());
-    }
-
-    public static String[] readAllLines(String filename) {
-        try {
-            return Files
-                    .readAllLines(Paths.get("./res/" + filename + ".txt"))
-                    .toArray(String[]::new);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
-
-    public static int[] parseEntries(String filename) {
-        try {
-            return Files.readAllLines(Paths.get(filename))
-                    .stream()
-                    .mapToInt(Integer::parseInt)
-                    .toArray();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return null;
+        Day9 day9 = new Day9(Parser.parseAllLinesAsLong("input_p9"));
+        var answer1 = day9.getFirstFailingNumber(25);
+        System.out.println("Day9 Puzzle1: " + answer1);
+        System.out.println("Da9 Puzzle2: " + day9.getEncryptionWeakness(answer1));
     }
 }
