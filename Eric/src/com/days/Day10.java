@@ -30,24 +30,24 @@ public class Day10 {
         var adaptersList = toList(sortCopy(adapters));
         adaptersList.add(0, 0); // charging outlet
         adaptersList.add(adaptersList.get(adaptersList.size() - 1) + 3); // built-in adapter
-        var counts = new HashMap<Integer, Long>() {{
+        var arrangementCounts = new HashMap<Integer, Long>() {{
             put(adaptersList.size() - 1, 0L);
             put(adaptersList.size() - 2, 1L);
         }};
 
-        findArrangement(0, adaptersList, counts);
-        return counts.get(0);
+        findArrangement(0, adaptersList, arrangementCounts);
+        return arrangementCounts.get(0);
     }
 
-    private long findArrangement(int start, List<Integer> adaptersList, HashMap<Integer, Long> counts) {
-        if (counts.containsKey(start)) return counts.get(start);
+    private long findArrangement(int start, List<Integer> adaptersList, HashMap<Integer, Long> arrangementCounts) {
+        if (arrangementCounts.containsKey(start)) return arrangementCounts.get(start);
 
         var arrangementCount = 0L;
         for (int i = 1; i <= 3; i++)
             if ((start + i < adaptersList.size()) && (adaptersList.get(start + i) - adaptersList.get(start) <= 3))
-                arrangementCount += findArrangement(start + i, adaptersList, counts);
-        
-        counts.put(start, arrangementCount);
+                arrangementCount += findArrangement(start + i, adaptersList, arrangementCounts);
+
+        arrangementCounts.put(start, arrangementCount);
         return arrangementCount;
     }
 
