@@ -1,13 +1,12 @@
 package com.base;
 
-import com.days.Day9;
+import com.days.Day10;
 
 public class Main {
 
     public static void main(String[] args) {
-        Day9 day9 = new Day9(Parser.parseAllLinesAsLong("input_p9"));
-        var answer1 = day9.getFirstFailingNumber(25);
-        System.out.println("Day9 Puzzle1: " + answer1);
-        System.out.println("Da9 Puzzle2: " + day9.getEncryptionWeakness(answer1));
+        Day10 day10 = new Day10(Parser.parseAllLinesAsInt("input_p10"));
+        System.out.println("Day10 Puzzle1:" + day10.getJoltDifferences());
+        System.out.println("Day10 Puzzle2:" + day10.getArrangements());
     }
 }
