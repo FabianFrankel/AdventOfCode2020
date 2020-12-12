@@ -39,37 +39,37 @@ public class Day12 {
 }
 
 class Boat {
-    Compass dir;
+    String dir;
     int degrees;
     final Waypoint waypoint;
-    final HashMap<Compass, Integer> foo;
+    final HashMap<String, Integer> pos;
 
     Boat() {
         degrees = 90;
         dir = getDirFromDegrees(degrees);
         waypoint = new Waypoint();
-        foo = new HashMap<>() {{
-            put(Compass.N, 0);
-            put(Compass.E, 0);
-            put(Compass.S, 0);
-            put(Compass.W, 0);
+        pos = new HashMap<>() {{
+            put("N", 0);
+            put("E", 0);
+            put("S", 0);
+            put("W", 0);
         }};
 
     }
 
     int getManhattanDistance() {
-        return Math.abs(foo.get(Compass.N) - foo.get(Compass.S)) + Math.abs(foo.get(Compass.W) - foo.get(Compass.E));
+        return Math.abs(pos.get("N") - pos.get("S")) + Math.abs(pos.get("W") - pos.get("E"));
     }
 
     void moveToWaypoint(String dir, int val) {
         switch (dir) {
             case "F" -> {
-                var n = waypoint.getNorth();
-                var e = waypoint.getEast();
-                foo.computeIfPresent(e.getKey(), ((k, v) -> v += val * e.getValue()));
-                foo.computeIfPresent(n.getKey(), ((k, v) -> v += val * n.getValue()));
+                var nPos = waypoint.getNorth();
+                var ePos = waypoint.getEast();
+                pos.computeIfPresent(ePos.getKey(), ((k, v) -> v += val * ePos.getValue()));
+                pos.computeIfPresent(nPos.getKey(), ((k, v) -> v += val * nPos.getValue()));
             }
-            case "E", "W", "N", "S" -> waypoint.move(Compass.valueOf(dir), val);
+            case "E", "W", "N", "S" -> waypoint.move(dir, val);
             case "L" -> waypoint.turn(-val);
             case "R" -> waypoint.turn(val);
         }
@@ -77,8 +77,8 @@ class Boat {
 
     void move(String dir, int val) {
         switch (dir) {
-            case "F" -> foo.computeIfPresent(this.dir, ((k, v) -> v += val));
-            case "E", "W", "N", "S" -> foo.computeIfPresent(Compass.valueOf(dir), (k, v) -> v += val);
+            case "F" -> pos.computeIfPresent(this.dir, ((k, v) -> v += val));
+            case "E", "W", "N", "S" -> pos.computeIfPresent(dir, (k, v) -> v += val);
             case "L" -> turn(-val);
             case "R" -> turn(val);
         }
@@ -90,70 +90,66 @@ class Boat {
         this.degrees = degrees;
     }
 
-    Compass getDirFromDegrees(int degrees) {
-        Compass dir;
+    String getDirFromDegrees(int degrees) {
+        String dir;
         switch (degrees) {
-            case 0 -> dir = Compass.N;
-            case 180 -> dir = Compass.S;
-            case 270 -> dir = Compass.W;
-            default -> dir = Compass.E;
+            case 0 -> dir = "N";
+            case 180 -> dir = "S";
+            case 270 -> dir = "W";
+            default -> dir = "E";
         }
         return dir;
     }
 }
 
 class Waypoint {
-    HashMap<Compass, Integer> bar = new HashMap<>() {{
-        put(Compass.N, 1);
-        put(Compass.E, 10);
+    HashMap<String, Integer> pos = new HashMap<>() {{
+        put("N", 1);
+        put("E", 10);
     }};
 
-    Map.Entry<Compass, Integer> getNorth() {
-        var val = bar.get(Compass.N);
-        return val < 0 ? new AbstractMap.SimpleEntry(Compass.S, Math.abs(val)) : new AbstractMap.SimpleEntry(Compass.N, Math.abs(val));
+    Map.Entry<String, Integer> getNorth() {
+        var val = pos.get("N");
+        return val < 0 ?
+                new AbstractMap.SimpleEntry<>("S", Math.abs(val)) :
+                new AbstractMap.SimpleEntry<>("N", Math.abs(val));
     }
 
-    Map.Entry<Compass, Integer> getEast() {
-        var val = bar.get(Compass.E);
-        return val < 0 ? new AbstractMap.SimpleEntry(Compass.W, Math.abs(val)) : new AbstractMap.SimpleEntry(Compass.E, Math.abs(val));
+    Map.Entry<String, Integer> getEast() {
+        var val = pos.get("E");
+        return val < 0 ?
+                new AbstractMap.SimpleEntry<>("W", Math.abs(val)) :
+                new AbstractMap.SimpleEntry<>("E", Math.abs(val));
     }
 
-    void move(Compass key, int val) {
+    void move(String key, int val) {
         switch (key) {
-            case N -> bar.computeIfPresent(Compass.N, ((k, v) -> v += val));
-            case S -> bar.computeIfPresent(Compass.N, ((k, v) -> v -= val));
-            case E -> bar.computeIfPresent(Compass.E, ((k, v) -> v += val));
-            case W -> bar.computeIfPresent(Compass.E, ((k, v) -> v -= val));
+            case "N" -> pos.computeIfPresent("N", ((k, v) -> v += val));
+            case "S" -> pos.computeIfPresent("N", ((k, v) -> v -= val));
+            case "E" -> pos.computeIfPresent("E", ((k, v) -> v += val));
+            case "W" -> pos.computeIfPresent("E", ((k, v) -> v -= val));
         }
     }
 
     void turn(int degrees) {
-        degrees = Math.floorMod(degrees, 360);
-        var n = bar.get(Compass.N);
-        var e = bar.get(Compass.E);
-        switch (degrees) {
+        var nPos = pos.get("N");
+        var ePos = pos.get("E");
+        switch (Math.floorMod(degrees, 360)) {
             case 90 -> {
-                bar.computeIfPresent(Compass.N, ((k, v) -> v = -e));
-                bar.computeIfPresent(Compass.E, ((k, v) -> v = n));
+                pos.computeIfPresent("N", ((k, v) -> v = -ePos));
+                pos.computeIfPresent("E", ((k, v) -> v = nPos));
             }
             case 180 -> {
-                bar.computeIfPresent(Compass.N, ((k, v) -> v = -n));
-                bar.computeIfPresent(Compass.E, ((k, v) -> v = -e));
+                pos.computeIfPresent("N", ((k, v) -> v = -nPos));
+                pos.computeIfPresent("E", ((k, v) -> v = -ePos));
             }
             case 270 -> {
-                bar.computeIfPresent(Compass.N, ((k, v) -> v = e));
-                bar.computeIfPresent(Compass.E, ((k, v) -> v = -n));
+                pos.computeIfPresent("N", ((k, v) -> v = ePos));
+                pos.computeIfPresent("E", ((k, v) -> v = -nPos));
             }
 
         }
     }
-}
-
-enum Compass {
-    N,
-    E,
-    S,
-    W
 }
 
 record Instruction(String direction, int val) {
