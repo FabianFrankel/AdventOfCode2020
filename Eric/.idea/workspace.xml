@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dae0d0c0-b445-4eed-9c76-a61b599557c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/res/input_p11.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/days/Day11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/input_p12.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/days/Day12.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/puzzles/com/base/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/puzzles/com/base/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/puzzles/com/days/Day10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/puzzles/com/days/Day10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/puzzles/com/days/Bingo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/puzzles/com/days/Day11$Map.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/puzzles/com/days/Day11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/puzzles/com/days/Day11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/puzzles/com/days/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/puzzles/com/days/Map.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/res/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/base/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/base/Main.java" afterDir="false" />
     </list>
@@ -135,7 +138,7 @@
       <workItem from="1607361435266" duration="8589000" />
       <workItem from="1607522850819" duration="3244000" />
       <workItem from="1607610953211" duration="21196000" />
-      <workItem from="1607702168001" duration="9465000" />
+      <workItem from="1607702168001" duration="20278000" />
     </task>
     <servers />
   </component>
@@ -146,12 +149,15 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="xOff" />
-        <watch expression="yOff" />
-      </configuration>
-    </watches-manager>
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/days/Day12.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/puzzles$Main.ic" NAME="Main Coverage Results" MODIFIED="1607688761251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
